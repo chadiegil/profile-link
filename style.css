@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(100deg, black, rgb(58, 56, 56, 0.5));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 450px;
+  height: 350px;
+  background-color: white;
+  box-shadow: 10px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  position: relative;
+}
+.profile {
+  position: absolute;
+  width: 100px;
+  top: -2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.title {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.body {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.body h3 {
+  opacity: 0.8;
+  font-size: 1rem;
+}
+
+.body {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.body ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 0.8rem;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.body ul li:hover {
+  background-color: rgb(68, 4, 68);
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 10px;
+  font-size: 10px;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+h5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.email,
+.youtube,
+.facebook {
+  width: 15px;
+  margin-right: 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.email:hover,
+.facebook:hover .youtube:hover {
+  box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 120px) {
+  .title {
+    font-size: 0.7em;
+  }
+  .body h3 {
+    font-size: 0.7em;
+  }
+  .body ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .body ul li {
+    padding: 8px;
+    margin: 1px;
+    font-size: 10px;
+  }
+}
